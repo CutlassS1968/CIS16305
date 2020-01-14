@@ -1,4 +1,4 @@
-package Project1;
+package Project1.ChangeJarPrj;
 
 import java.io.*;
 import java.util.*;
@@ -53,6 +53,51 @@ public class ChangeJar {
         nickels = other.nickels;
         pennies = other.pennies;
     }
+
+    /*******************************************************************
+     *
+     *   This constructor creates a Change Jar from a given
+     *   amount of change
+     *
+     * @param amt is the amount of change to start with
+     */
+
+    public ChangeJar(double amt) {
+        while (amt > 0) {
+            if (amt >= 25) {
+                ++quarters;
+                amt = amt - 25;
+            } else if (amt >= 10) {
+                ++dimes;
+                amt = amt - 10;
+            } else if (amt >= 5) {
+                ++nickels;
+                amt = amt - 5;
+            } else if (amt >= 1) {
+                ++pennies;
+                --amt;
+            }
+        }
+    }
+
+
+    /********************************************************************
+     *
+     *      Example of an equals method
+     */
+
+//    public boolean equals (Object other) {
+//        if (other != null) {                //Make sure the object isn't null
+//            if (other instanceof Lock) {    //Make sure the object is a Lock object
+//                Lock temp = (Lock) other;   //Casting or Coersion
+//                if (this.correctCode.equals(temp.correctCode)) //Compare lock codes
+//                    return true;
+//                else return false;
+//            }
+//        }
+//        throw new IllegalArgumentException;
+//    }
+
 
     /******************************************************************
      *
