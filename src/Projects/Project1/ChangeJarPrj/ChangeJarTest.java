@@ -1,4 +1,4 @@
-package Project1.ChangeJarPrj;
+package Projects.Project1.ChangeJarPrj;
 
 import org.junit.Test;
 

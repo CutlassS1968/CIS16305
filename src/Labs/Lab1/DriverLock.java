@@ -1,4 +1,4 @@
-package Lab1;
+package Labs.Lab1;
 
 import javax.swing.JOptionPane;
 

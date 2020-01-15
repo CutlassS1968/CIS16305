@@ -1,4 +1,4 @@
-package Project1.ChangeJarPrj;
+package Projects.Project1.ChangeJarPrj;
 
 import java.io.*;
 import java.util.*;

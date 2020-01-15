@@ -1,10 +1,7 @@
-package Lab1;
+package Labs.Lab1;
 
-import java.awt.event.*;
 import java.io.*;
 import java.util.Scanner;
-
-import javax.swing.Timer;
 
 public class Lock {
 

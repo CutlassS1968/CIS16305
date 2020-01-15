@@ -1,4 +1,4 @@
-package Lab2;
+package Labs.Lab2;
 
 public class SimpleCLass {
 	private int value;
@@ -7,6 +7,14 @@ public class SimpleCLass {
 	public SimpleCLass(int number) {
 		value = number;
 		numberOfInst++;
+	}
+
+	public static int getNumberOfInst() {
+		return numberOfInst;
+	}
+
+	public static void setNumberOfInst(int numberOfInst) {
+		SimpleCLass.numberOfInst = numberOfInst;
 	}
 
 	public String toString() {
